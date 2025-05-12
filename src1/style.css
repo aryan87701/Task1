@@ -1,0 +1,421 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+.full{
+    width: 100%;
+}
+
+.image{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 5px 10px;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
+.h{
+    color: rgb(239, 86, 59);
+    text-align: right;
+    padding: 30px;
+    margin: 10px;
+    margin-top: 0;
+    font-weight: 900;
+    animation: arrive linear;
+        animation-timeline: view();
+         animation-range: entry 50%;
+    
+}
+
+h2{
+    font-weight: 800;
+    color: black;
+}
+
+#box{
+    width: 50%;
+    display: flex;
+    margin: 30px;
+    padding: 10px;
+    gap: 20px;
+    background-color: orangered;
+    justify-self: end;
+    border-radius: 12px;
+    color: white;
+    font-weight: 700;
+    animation: appear linear;
+        animation-timeline: scroll();
+         animation-range: entry 0%;
+}
+
+.detail{
+    padding:0 20px;
+}
+
+.event{
+    background-image: url('./bge.jpg');
+    background-size: cover;
+}
+
+@media (max-width:1000px){
+    #box{
+        width: 70%;
+    }
+}
+
+@media (max-width:650px){
+    #box{
+        width: 90%;
+    }
+    .event{
+        background-image: none;
+    }
+}
+
+@media (max-width:550px){
+    #box{
+        width: 98%;
+    }
+    
+}
+
+@media (max-width:550px){
+    .image{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+@keyframes arrive{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+
+
+
+
+
+
+.ha{
+    margin: 10px;
+    padding: 5px;
+     animation-timeline: view();
+     animation: arrive 1s  linear forwards;
+       
+        
+    
+}
+
+.atext{
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    animation: appear 1s linear forwards;
+}
+.gridcont{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr; 
+  gap: 20px;
+  padding: 40px;
+}
+
+.img-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.me :hover {
+  animation: spin 0.5s linear;
+  transform-style: preserve-3d;
+}
+
+
+.odd{
+     height: 200px;
+     width: 200px;
+     margin: 10px;
+     transform: skewY(+10deg);
+     animation: appear linear;
+        animation-timeline: view();
+         animation-range: entry 0%;
+}
+
+.even{
+     height: 200px;
+     width: 200px;
+     margin: 10px;
+     transform: skewY(-10deg);
+     animation: appear linear;
+        animation-timeline: view();
+         animation-range: entry 0%;
+    
+
+}
+
+.alb{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.me{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+
+}
+
+.me > img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 50%;
+     border: 1.5px solid black;
+}
+
+.meet{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.person{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.person > span{
+     color: orangered;
+     font-size: 25px;
+     font-weight: 900;
+     padding-top: 10px;
+}
+
+@media(min-width:800px )and (max-width:1080px){
+    .me{
+        height: 180px;
+        width: 180px;
+    }
+}
+
+@media (max-width:800px){
+    .gridcont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .res{
+        animation: appear linear;
+        animation-timeline: scroll();
+         animation-range: entry 0%;
+    }
+    
+    .odd{
+        border-radius: 5px;
+    }
+    .even{
+        border-radius: 5px;
+    }
+
+
+    .alb{
+        border-radius: 7px;
+
+    }
+
+    #img-grid{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .double{
+        display: none;
+    }
+
+    
+
+    
+}
+
+@media (max-width: 740px){
+     .gridcont{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+   
+     .odd{
+        transform: none;
+        border-radius: 5px;
+        width: 150px;
+        height: 150px;
+    }
+    .even{
+        transform: none;
+        border-radius: 5px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .double {
+        display: none;
+    }
+
+}
+
+@media(max-width:540px){
+    .me{
+        height: 180px;
+        width: 180px;
+    }
+
+    #img-grid{
+        justify-content: space-evenly;
+    }
+
+    .odd{
+        width: 150px;
+        height: 150px;
+        padding: 0;
+        margin: 2px;
+    }
+    .even{
+        width: 150px;
+        height: 150px;
+        padding: 0;
+        margin: 2px;
+    }
+
+}
+
+@media (max-width:480px){
+     .odd{
+        width: 120px;
+        height: 120px;
+        
+    }
+    .even{
+        width: 120px;
+        height: 120px;
+        
+    }
+    
+}
+
+@media(max-width:400px){
+    .me{
+        height: 130px;
+        width: 130px;
+    }
+    .person>span{
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:391px){
+    .odd{
+        width: 100px;
+        height: 100px;
+       
+    }
+    .even{
+        width: 100px;
+        height: 100px;
+        
+    }
+}
+
+@media(max-width:391px){
+    .odd{
+        width: 80px;
+        height: 80px;
+      
+    }
+    .even{
+        width: 80px;
+        height: 80px;
+        
+    }
+}
+
+@media(max-width:299px){
+    .me{
+        height: 85px;
+        width: 85px;
+    }
+    .person>span{
+        font-size: 14px;
+    }
+}
+
+
+@keyframes appearsO{
+    from{
+        opacity: 0;
+        transform: translateX(-100px) skew(+10deg);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px) skew(+10deg);
+    }
+}

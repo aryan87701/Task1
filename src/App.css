@@ -1,0 +1,832 @@
+@import "tailwindcss";
+
+
+
+.isActive{
+color: red;
+}
+
+.bg{
+    width: 100vw;
+    height: 100vh;
+    background: url('./assets/bgf.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  z-index: -2;}
+  
+
+.navfont{
+   /* font-family: "Konkhmer Sleokchher", system-ui; */
+   font-size: 1.2vw;
+   font-weight: 500;
+  
+}
+
+.behnav{
+border-radius: 50px;
+    position: absolute;
+    width: 23%;
+    height: 43%;
+    top: 15%;
+    left: 38%;
+background-color: rgba(255, 255, 255, 0.355);
+}
+.behnavbou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arthur img{
+width: 45vw;
+    bottom: 0%;
+    right: 0%;
+    position: absolute;
+    animation: ltora 1s ease-in-out;
+   /* box-shadow: -17px -6px 20px 0px rgb(0, 0, 0); */
+}
+
+
+
+
+.welcome h2{
+     
+    font-family:serif;
+       position: relative;
+    /* width: 103%;
+    height: 50%;
+    top: -34%;
+    left: 10%; */
+    font-size: 3rem;
+   text-shadow: -5px -3px 0px #f25212;
+   animation: ltor 1s ease-in-out;
+}
+@keyframes ltor {
+    0%{
+        left: -10%;
+        opacity: 0%;
+        
+
+    }
+    100%{
+        left: 0%;
+        opacity: 100%;
+    }
+}
+@keyframes ltord {
+    0%{
+        left: -10%;
+        opacity: 0%;
+        
+
+    }
+    100%{
+        left: 00%;
+        opacity: 100%;
+    }
+}
+@keyframes ltora {
+    0%{
+        right: -10%;
+        opacity: 0%;
+        
+
+    }
+    100%{
+      right: 0%;
+        opacity: 100%;
+    }
+}
+@keyframes rtol {
+    0%{
+        left: 10%;
+        opacity: 0%;
+        
+
+    }
+    100%{
+        left: 0%;
+        opacity: 100%;
+    }
+}
+@keyframes btot {
+    0%{
+        bottom: 0%;
+        opacity: 0%;
+        
+
+    }
+    100%{
+        bottom: 7%;
+        opacity: 100%;
+    }
+}
+.welcome h1{
+    margin-top: -45px;
+    font-family:fantasy;
+    font-size: 9rem;
+     position: relative;
+    /*font-size: 9em;
+    width: 20%;
+    height: 50%;
+    top: -25%;
+    left: 10%; */
+  text-shadow: -5px -3px 0px #f25212;
+     animation: rtol 1s ease-in-out;
+}
+
+.welcome {
+    flex-direction: column;
+    text-align: left;
+    display: flex;
+  position: absolute;
+    width: 85vw;
+    height: 50%;
+    justify-content: center;
+    align-items: left;
+    top: 4%;
+    margin-left:4rem ;
+    /* border: 2px solid black; */
+}
+
+.homeabout{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+ 
+    left: 4.5%;
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    bottom: 7%;
+    background: rgba(0, 0, 0, 0.403);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    box-shadow: -17px -6px 20px 0px rgb(0, 0, 0);
+    animation: btot 1s ease-in-out;
+}
+.homep{
+    font-family:'Times New Roman', Times, serif, Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(255, 255, 255, 0.821);
+    text-shadow: 1px 1px 2px #000;
+    font-size: 1.20vw;
+    margin: 30px 30px;
+}
+
+
+.dutch img{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+   width: 35%;
+    animation: ltord 1s ease-in-out;
+}
+
+.formContainer h1{
+    font-family: fantasy;
+    font-size: 40px;
+    
+}
+.formContainer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.714);
+    padding: 10px 50px;
+    box-shadow: -5px -1px 20px 0px rgb(0, 0, 0);
+    animation: formc 1s ease-in-out;
+    position: absolute;
+    width: 60%;
+    display: flex
+;
+    flex-direction: column;
+    top: 14%;
+    left: 34%;
+    margin: 0px 20px;
+       
+}
+@keyframes formc{
+    0%{
+    opacity: 0%;
+    top:30%;
+    }
+    100%{
+        opacity: 100%;
+        top: 36;
+    }
+}
+
+.formContainer button{
+    border: 2px solid black;
+    width: 40%;
+    align-self: center;
+    border-radius: 25px;
+    padding: 5px 25px;
+    font-family:fantasy;
+   margin-top: 30px;
+   margin-bottom: 20px;
+}
+.formContainer button:hover{
+ background: black;
+ color: white;
+ transition: all 0.3s ease-in-out;
+}
+.in{
+  border-radius: 5px;
+  background: #f2511266;
+  padding: 2px 8px;
+
+
+}
+.card{position: absolute;
+    bottom: 4%;
+    right: 4%;
+    animation:card 1s ease-in-out ;
+    width: 200px;
+    height: 60px;
+ }
+ @keyframes card{
+    0%{
+opacity: 0%;
+right: 50%;
+    }
+    100%{
+opacity: 100%;
+right: 4%;
+    }
+ }
+
+ @media(max-width :769px){
+
+    .navfont{
+
+   font-size: 1.7vw;
+   font-weight: 500;
+  
+}
+.homep{
+    font-size: 1.65vw;
+}
+.welcome{
+    margin-left:2rem ;
+}
+.welcome h1{
+    margin-top: -50px;
+}
+.dutch img{
+    width: 45%;
+}
+ }
+ @media(max-width :426px){
+
+.navfont{
+font-size: 4vw;
+   font-weight: 700;
+  
+}
+.homep{
+    font-size: 3vw;
+}
+.welcome h2{
+    font-size: 7vw;
+}
+.welcome h1{
+    font-size:15vw;
+    margin-top: -20px;
+}
+.welcome{
+    margin-left:2rem ;
+}
+.arthur img{
+    display: none;
+}
+.homeabout{
+    width: 90vw;
+}
+.dutch img{
+    display: none;
+}
+.formContainer{
+    width: 80vw;
+    padding:10px 10px ;
+    left: 5.5%;
+    top: 15%;
+}
+.formContainer h1{
+    font-size: 10vw;
+}
+.formContainer form{
+    font-size: 4vw;
+}
+.card{
+          bottom: 4%;
+        right: 14%;
+        animation: card1 1s ease-in-out;
+    
+}
+
+}
+ @keyframes card1{
+    0%{
+opacity: 0%;
+right: 50%;
+    }
+    100%{
+opacity: 100%;
+right: 14%;
+    }
+ }
+ @keyframes card2{
+    0%{
+opacity: 0%;
+right: 50%;
+    }
+    100%{
+opacity: 100%;
+right: 3%;
+    }
+ }
+ @keyframes card3{
+    0%{
+opacity: 0%;
+right: 50%;
+    }
+    100%{
+opacity: 100%;
+right: 10%;
+    }
+ }
+
+
+@media(max-width:1024px){
+    .dutch img{
+        width: 42%;
+    }
+}
+@media(max-width:376px){
+   .card{
+        bottom: 4%;
+        right: 10%;
+        animation: card3 1s ease-in-out;
+       
+}
+.formContainer{
+    top: 18%;
+}
+}
+@media(max-width:321px){
+   .card{
+          bottom: 4%;
+        right: 3%;
+        animation: card2 1s ease-in-out;
+       
+}
+.formContainer{
+    top: 18%;
+}
+}
+
+
+
+.navb{
+    box-shadow: -5px -3px 8px 0px rgb(0, 0, 0);
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* width: 100%; */
+        background: url('./assets/uvg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+      
+    
+}
+
+.full{
+top: 7%;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+
+}
+.fulll{
+height: 20%;
+margin: 20px;
+}
+
+.image{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 5px 10px;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
+.h{
+    color: rgb(239, 86, 59);
+    text-align: right;
+    padding: 30px;
+    margin: 10px;
+    margin-top: 0;
+    font-weight: 900;
+    animation: arrive linear;
+    animation-timeline: view();
+    animation-range: entry 50%;
+    
+}
+
+h2{
+    font-weight: 800;
+    color: black;
+}
+
+#box{
+    width: 50%;
+    display: flex;
+    margin: 30px;
+    padding: 10px;
+    gap: 20px;
+    background-color: orangered;
+    justify-self: end;
+    border-radius: 12px;
+    color: white;
+    font-weight: 700;
+    animation: appear linear;
+        animation-timeline: scroll();
+        animation-range: entry 0%;
+}
+
+.detail{
+    padding:0 20px;
+}
+
+.event{
+    background-image: url('./assets/bge.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+@media (max-width:1000px){
+    #box{
+        width: 70%;
+    }
+}
+
+@media (max-width:650px){
+    #box{
+        width: 90%;
+    }
+    .event{
+        background-image: none;
+    }
+}
+
+@media (max-width:550px){
+    #box{
+        width: 98%;
+    }
+    
+}
+
+@media (max-width:550px){
+    .image{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+@keyframes arrive{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+
+
+
+
+
+
+.ha{
+    /* margin: 10px; */
+    padding: 5px;
+     animation-timeline: view();
+     animation: arrive 1s  linear forwards;
+     font-size: 2vw;
+     font-weight: 700;
+       
+        
+    
+}
+
+.atext{
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.4vw;
+    font-weight: 600;
+    animation: appear 1s linear forwards;
+}
+.gridcont{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr; 
+  gap: 20px;
+  padding: 40px;
+}
+
+.img-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.me :hover {
+  animation: spin 0.5s linear;
+  transform-style: preserve-3d;
+}
+
+
+.odd{
+     height: 200px;
+     width: 200px;
+     margin: 10px;
+     transform: skewY(+10deg);
+     animation: appear linear;
+        animation-timeline: view();
+         animation-range: entry 0%;
+}
+
+.even{
+     height: 200px;
+     width: 200px;
+     margin: 10px;
+     transform: skewY(-10deg);
+     animation: appear linear;
+        animation-timeline: view();
+         animation-range: entry 0%;
+    
+
+}
+
+.alb{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.me{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+
+}
+
+.me > img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 50%;
+     border: 1.5px solid black;
+}
+
+.meet{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.person{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.person > span{
+     color: orangered;
+     font-size: 25px;
+     font-weight: 900;
+     padding-top: 10px;
+}
+
+@media(min-width:800px )and (max-width:1080px){
+    .me{
+        height: 180px;
+        width: 180px;
+    }
+}
+
+@media (max-width:800px){
+    .gridcont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .res{
+        animation: appear linear;
+        animation-timeline: scroll();
+         animation-range: entry 0%;
+    }
+    
+    .odd{
+        border-radius: 5px;
+    }
+    .even{
+        border-radius: 5px;
+    }
+
+
+    .alb{
+        border-radius: 7px;
+
+    }
+
+    #img-grid{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .double{
+        display: none;
+    }
+
+    
+
+    
+}
+
+@media (max-width: 740px){
+     .gridcont{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+   
+     .odd{
+        transform: none;
+        border-radius: 5px;
+        width: 150px;
+        height: 150px;
+    }
+    .even{
+        transform: none;
+        border-radius: 5px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .double {
+        display: none;
+    }
+
+}
+
+@media(max-width:540px){
+    .me{
+        height: 180px;
+        width: 180px;
+    }
+
+    #img-grid{
+        justify-content: space-evenly;
+    }
+
+    .odd{
+        width: 150px;
+        height: 150px;
+        padding: 0;
+        margin: 2px;
+    }
+    .even{
+        width: 150px;
+        height: 150px;
+        padding: 0;
+        margin: 2px;
+    }
+
+}
+
+@media (max-width:480px){
+     .odd{
+        width: 120px;
+        height: 120px;
+        
+    }
+    .even{
+        width: 120px;
+        height: 120px;
+        
+    }
+    
+}
+
+@media(max-width:400px){
+    .me{
+        height: 130px;
+        width: 130px;
+    }
+    .person>span{
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:391px){
+    .odd{
+        width: 100px;
+        height: 100px;
+       
+    }
+    .even{
+        width: 100px;
+        height: 100px;
+        
+    }
+}
+
+@media(max-width:391px){
+    .odd{
+        width: 80px;
+        height: 80px;
+      
+    }
+    .even{
+        width: 80px;
+        height: 80px;
+        
+    }
+}
+
+@media(max-width:299px){
+    .me{
+        height: 85px;
+        width: 85px;
+    }
+    .person>span{
+        font-size: 14px;
+    }
+}
+
+
+@keyframes appearsO{
+    from{
+        opacity: 0;
+        transform: translateX(-100px) skew(+10deg);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px) skew(+10deg);
+    }
+}
