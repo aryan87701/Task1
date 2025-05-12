@@ -419,8 +419,17 @@ top: 7%;
 
 }
 .fulll{
-height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 margin: 20px;
+    background: #ffffff70;
+    height: 20vw;
+
+border-radius:25px ;
+padding: 20px 20px;
 }
 
 .image{
@@ -442,15 +451,14 @@ margin: 20px;
     text-align: right;
     padding: 30px;
     margin: 10px;
-    margin-top: 0;
+    margin-top: 25px;
     font-weight: 900;
-    animation: arrive linear;
-    animation-timeline: view();
-    animation-range: entry 50%;
+    animation: arrive 1s linear forwards;
+    font-size: 20px;
     
 }
 
-h2{
+.detail h2{
     font-weight: 800;
     color: black;
 }
@@ -458,7 +466,7 @@ h2{
 #box{
     width: 50%;
     display: flex;
-    margin: 30px;
+    margin: 20px;
     padding: 10px;
     gap: 20px;
     background-color: orangered;
@@ -466,9 +474,7 @@ h2{
     border-radius: 12px;
     color: white;
     font-weight: 700;
-    animation: appear linear;
-        animation-timeline: scroll();
-        animation-range: entry 0%;
+    animation: appear 1s linear forwards;
 }
 
 .detail{
@@ -478,8 +484,9 @@ h2{
 .event{
     background-image: url('./assets/bge.jpg');
     background-size: cover;
-    height: 100vh;
     width: 100%;
+    padding: 15px;
+    height: 100vh;
 }
 
 @media (max-width:1000px){
@@ -493,13 +500,16 @@ h2{
         width: 90%;
     }
     .event{
-        background-image: none;
+        background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA4gMBIgACEQEDEQH/xAAWAAEBAQAAAAAAAAAAAAAAAAAAAQf/xAAXEAEBAQEAAAAAAAAAAAAAAAAAAREx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2woNBEqgAAFRaQExQAABKYoAAAAAAAAAAAAAAAAgAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKACCgIAAAAAAAAAAAAAAAAAAAAAACgItQFEUAAEAAAAAACkAAAAAAAAAAAAAAAVAFQAFQBUVAAKAlXUoCougJS0AxU1QA0oAdAA0AAAAAAAAAAAABRAE00AAAAAAADQBcKmgGmgC4VNANWIAoAAAAAAAAAAAIlUBIAAoAAAAAAAAAAAAAKAFQAWcAAAAAAAB/9k=");
     }
 }
 
 @media (max-width:550px){
     #box{
         width: 98%;
+    }
+    #box{
+        justify-self: center;
     }
     
 }
@@ -539,7 +549,7 @@ h2{
 
 
 
-@keyframes spin {
+@keyframes flip{
   from {
     transform: rotateY(0deg);
   }
@@ -555,21 +565,17 @@ h2{
 
 
 .ha{
-    /* margin: 10px; */
-    padding: 5px;
-     animation-timeline: view();
-     animation: arrive 1s  linear forwards;
-     font-size: 2vw;
-     font-weight: 700;
-       
+animation: arrive 1s linear forwards;
+    font-size: 3vw;
+    font-weight: 700;
         
     
 }
 
 .atext{
-    margin: 10px;
-    padding: 5px;
-    font-size: 1.4vw;
+   margin-top: 10px;
+    /* padding: 5px; */
+    font-size: 1.7vw;
     font-weight: 600;
     animation: appear 1s linear forwards;
 }
@@ -587,7 +593,7 @@ h2{
 }
 
 .me :hover {
-  animation: spin 0.5s linear;
+  animation: flip 0.5s linear;
   transform-style: preserve-3d;
 }
 
@@ -651,6 +657,7 @@ h2{
 }
 
 .person > span{
+    text-shadow: -2px -1px 6px black;
      color: orangered;
      font-size: 25px;
      font-weight: 900;
@@ -671,9 +678,7 @@ h2{
     }
 
     .res{
-        animation: appear linear;
-        animation-timeline: scroll();
-         animation-range: entry 0%;
+        animation: appear 1s linear forwards;
     }
     
     .odd{
@@ -758,7 +763,7 @@ h2{
 
 }
 
-@media (max-width:480px){
+@media (max-width:482px){
      .odd{
         width: 120px;
         height: 120px;
@@ -809,6 +814,21 @@ h2{
     }
 }
 
+@media(max-width:272px){
+    .odd{
+        width: 50px;
+        height: 50px;
+      
+    }
+    .even{
+        width: 50px;
+        height: 50px;
+        
+    }
+}
+
+
+
 @media(max-width:299px){
     .me{
         height: 85px;
@@ -816,17 +836,5 @@ h2{
     }
     .person>span{
         font-size: 14px;
-    }
-}
-
-
-@keyframes appearsO{
-    from{
-        opacity: 0;
-        transform: translateX(-100px) skew(+10deg);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px) skew(+10deg);
     }
 }

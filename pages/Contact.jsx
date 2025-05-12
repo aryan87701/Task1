@@ -14,7 +14,10 @@ function Contact(){
           Name : <input type="text" required className='in' placeholder='Enter your Name'/>
           Email : <input type="email" required className='in' placeholder='example@gmail.com'/>
           Message : <textarea name="" id="" className='in' placeholder='Your Message to us'></textarea>
-          <button>SUBMIT</button>
+          <button onClick={(e)=>{
+            e.preventDefault()
+            alert('Your Message is Successfully sent')
+          }}>SUBMIT</button>
         </form>
       </div>
       <div className='CCard'>
