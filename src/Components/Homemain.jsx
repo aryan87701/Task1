@@ -9,7 +9,13 @@ function Homemain() {
         </div>
         <div className='arthur'><img src={arthur} alt="sad"/></div>
         <div className='homeabout'>
-        <p className='homep'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam sint aliquid voluptas fugit, optio reprehenderit! Corrupti beatae, molestias, illum atque deleniti esse amet laborum sed saepe cupiditate facere! Esse, laudantium recusandae excepturi magni quod reiciendis modi dignissimos amet vero, saepe numquam quibusdam autem? Est explicabo optio aut debitis. Quas obcaecati, ratione voluptatem saepe dignissimos accusamus consequuntur sit, minus dicta doloribus amet tempore, accusantium magni quis aliquid! Iure itaque unde perspiciatis fugiat culpa non possimus fugit, rerum vel, repellat reiciendis aut. Quas doloribus corporis ratione repellat? Aliquam deserunt </p>
+        <p className='homep'>Badboys Club is a private organization committed to cultivating principles of resilience, leadership, and brotherhood. Founded in 2019, the club embraces the spirit of independence, self-reliance, and mutual respect. Members are united by a shared appreciation for tradition, discipline, and personal growth, drawing inspiration from the values of frontier-era camaraderie and honor.
+
+The club hosts regular meetings focused on strategic planning, skill development, and community outreach. Activities include wilderness training, horseback riding, history discussions, and leadership seminars designed to promote character and teamwork. Every member is expected to uphold the club’s code of ethics, which emphasizes loyalty, responsibility, and discretion. 
+.
+
+
+ </p>
         </div>
     </div>
 
