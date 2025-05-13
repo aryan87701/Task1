@@ -216,6 +216,26 @@ width: 45vw;
         top: 14%;
     }
 }
+@keyframes formd{
+    0%{
+    opacity: 0%;
+    top:50%;
+    }
+    100%{
+        opacity: 100%;
+        top: 18%;
+    }
+}
+@keyframes forme{
+    0%{
+    opacity: 0%;
+    top:50%;
+    }
+    100%{
+        opacity: 100%;
+        top: 15%;
+    }
+}
 
 .formContainer button{
     border: 2px solid black;
@@ -312,6 +332,7 @@ font-size: 4vw;
     padding:10px 10px ;
     left: 5.5%;
     top: 15%;
+    animation: forme 1s ease-in-out;
 }
 .formContainer h1{
     font-size: 10vw;
@@ -373,6 +394,7 @@ right: 10%;
 }
 .formContainer{
     top: 18%;
+    animation: formd 1s ease-in-out;
 }
 }
 @media(max-width:321px){
