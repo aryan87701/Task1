@@ -209,11 +209,11 @@ width: 45vw;
 @keyframes formc{
     0%{
     opacity: 0%;
-    top:30%;
+    top:50%;
     }
     100%{
         opacity: 100%;
-        top: 36;
+        top: 14%;
     }
 }
 
