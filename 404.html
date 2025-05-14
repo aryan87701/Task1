@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; URL=./" />
+    <script type="text/javascript">
+      // GitHub Pages workaround for React Router
+      (function () {
+        var path = window.location.pathname;
+        var repoName = "BadBoys";
+        if (path.startsWith(repoName)) {
+          var newPath = path.replace(repoName, "");
+          var newUrl = repoName + "/#"+ newPath + window.location.search + window.location.hash;
+          window.location.replace(newUrl);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
